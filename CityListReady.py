@@ -3,7 +3,6 @@ import re
 import  json
 import pickle
 
-
 def  get():
     CityNameDict={}
 
@@ -14,8 +13,6 @@ def  get():
         r.raise_for_status()
         r.encoding=r.apparent_encoding
         CityNameDict=r.json()
-
-
 
     except:
         print("异常")
@@ -30,7 +27,7 @@ def  get():
     f1.close()
     print(TestDict)
 
-def Pr(Mes='',Command=0):
+def Pr(Mes='',Command=0):#遍历重组地区拓扑列表
     with open('CityName.txt', 'rb') as f1:
         TestDict = pickle.load(f1)
 

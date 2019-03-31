@@ -17,30 +17,24 @@ class MianWindow(object):
         self.FuTureDay = 0#未来天气模块
 
         self.Top=Tk()
-        self.Top.title('天气查询系统 v1.0')
-
-        #self.bt1 = Button(self.Top, text='test', command=self.Door).pack()
+        self.Top.title('天气查询系统 v4.3')
 
         self.photo = PhotoImage(file="mmexport1474714477684.png")
         self.PicLable=Label(self.Top,text='     \t\t\tQwQ\n\t\t只要有你  \n  \t\t     便是晴天\n\n\n\n\n\n\n\n\n\n\n\n\n\n',justify=LEFT,image=self.photo,compound=CENTER,fg="black",font=("隶书", 30))
         self.PicLable.pack()
-
-
-
 
         #定义菜单栏
         self.rootMenu=Menu(self.Top,bg='pink')
         self.menuList_1=Menu(self.Top)
 
         self.rootMenu.add_command(label='开始', command=self.Door)
-
-        self.menuList_1.add_command(label='测试1',command=self.Door)
         self.menuList_1.add_command(label='未来天气',command=self.Future)
         self.menuList_1.add_command(label='退出',command=self.Top.quit)
 
         self.Top['menu']=self.rootMenu
 
     def GoBack(self):
+        self.Info={}
         self.MainFrame.pack_forget()
         self.GoButton.pack_forget()
         self.numberChosen_3.pack_forget()
@@ -90,8 +84,9 @@ class MianWindow(object):
         self.numberChosen_2.pack_forget()#更换方框
         self.numberChosen_3.pack(side='left')
 
-        self.numberChosen_3['values']=self.DiquList
 
+        self.numberChosen_3['values']=self.DiquList
+        self.numberChosen_3.current(0)
         self.lab2.config(text='请选择地区：')
 
         self.ConfirmBut_2.pack_forget()
@@ -134,22 +129,16 @@ class MianWindow(object):
         self.name_3 = StringVar()
         self.numberChosen_3 = ttk.Combobox(self.frame_City, width=12, textvariable=self.name_3, font=("华文行楷", size_0))
 
-
-
-
-
         self.ConfirmBut_1 = Button(self.frame_City, text='确定省份', bg='yellow', font=("华文行楷", size_0 ), command=self.OK_1)
         self.ConfirmBut_1.pack(padx=10, pady=5, side='right')
 
         self.ConfirmBut_2 = Button(self.frame_City, text='确定城市', bg='red', font=("华文行楷",  size_0), command=self.OK_2)
-
         self.GoButton = Button(self.frame_City, text='查询', bg='green', font=("华文行楷",  size_0), command=self.Go)
 
         self.frame_City.pack(anchor='nw', padx=20, pady=10, ipadx=5, ipady=3)
 
-        self.Step_1=''
-        self.Step_2 = ''
-        self.Step_3 = ''
+
+        self.Step_2 = self.Step_1=self.Step_3=''
         self.StepLab=Label(self.Top,text=self.Step_1+self.Step_2+self.Step_3, font=("隶书",  size_0))
         self.StepLab.pack(anchor='ne', padx=20, pady=10, ipadx=5, ipady=3)
 
@@ -159,7 +148,6 @@ class MianWindow(object):
         test_Size = 20  # 主框架内字体大小
 
         # 定义返回按钮
-
         self.BackButon = Button(self.MainFrame, text='返回', bg='pink', command=self.GoBack).pack(anchor='nw', ipadx=5,ipady=3)
 
         # 当前天气框架
@@ -180,7 +168,7 @@ class MianWindow(object):
         self.todayWetherFra = Frame(self.MainFrame, padx=10, pady=10)
         kind='楷书'
         self.baseInfo = Frame(self.todayWetherFra, padx=10, pady=10)
-        self.Son1 = Label(self.baseInfo, text='城市:  ', font=(kind, test_Size))
+        self.Son1 = Label(self.baseInfo, text='地区:  ', font=(kind, test_Size))
         self.Son2 = Label(self.baseInfo, text='日期:  ', font=(kind, test_Size))
         self.Son3 = Label(self.baseInfo, text='星期:  ', font=(kind, test_Size))
         self.Son4 = Label(self.baseInfo, text='温度:  ', font=(kind, test_Size))
@@ -207,7 +195,6 @@ class MianWindow(object):
         self.Son4.pack()
         self.Son5.pack()
         self.Son6.pack()
-        # self.Son7.pack()
         self.Son8.pack()
         self.Son9.pack()
         self.Son10.pack()
@@ -220,10 +207,6 @@ class MianWindow(object):
 
         self.todayWetherFra.pack(side='right')
 
-
-
-
-
         self.PicLable.pack_forget()
 
     def Door(self):  #门禁函数
@@ -235,7 +218,6 @@ class MianWindow(object):
 
             pickle.dump(Userdict, f)
         f.close()
-
 
         self.photo_2= PhotoImage(file="IMG_20190316_6.png")
         self.PicLable_2 = Label(self.Top,justify=LEFT, image=self.photo_2, compound=CENTER, fg="black", font=("隶书", 30))
@@ -283,12 +265,12 @@ class MianWindow(object):
 
         Fram_2 = Frame(self.SetFram)
         RLab_2 = Label(Fram_2, text='请输入密码 ：', font=("华文行楷", size_0)).pack(side='left', ipady=17)
-        get_2 = Entry(Fram_2, textvariable=self.New_code_1, font=("华文行楷", size_0)).pack(side='right', pady=17)
+        get_2 = Entry(Fram_2, textvariable=self.New_code_1, font=("华文行楷", size_0),show='*').pack(side='right', pady=17)
         Fram_2.pack(side='top')
 
         Fram_3 = Frame(self.SetFram)
         RLab_3 = Label(Fram_3, text='请再次输入密码 ：', font=("华文行楷", size_0)).pack(side='left', ipady=17)
-        get_3 = Entry(Fram_3, textvariable=self.New_code_2, font=("华文行楷", size_0)).pack(side='right', pady=17)
+        get_3 = Entry(Fram_3, textvariable=self.New_code_2, font=("华文行楷", size_0),show='*').pack(side='right', pady=17)
         Fram_3.pack(side='top')
 
         Fram_4=Frame(self.SetFram)
@@ -307,7 +289,7 @@ class MianWindow(object):
         name=self.New_name.get()
         code_1=self.New_code_1.get()
         code_2 = self.New_code_2.get()
-        print('测试'+name+'  '+code_1+' '+code_2)
+
         if code_1 == code_2:
             re = Set_New.Do(name, code_1, code_2)
             if re is 1:
@@ -374,16 +356,12 @@ class MianWindow(object):
         self.futureWeaFrame.pack_forget()
 
     def Future(self):
-        test_Size_2=17
+        test_Size_2=25
         laBelipadx=10
         laBelipady=5
         if not self.Info:
             messagebox.showwarning(title='警告',message='请您选中一个城市并点击查询按钮！')
             return
-
-
-
-
 
         self.futureWeaFrame=Frame(self.Top)
         # 定义跳转按钮
@@ -415,7 +393,7 @@ class MianWindow(object):
     def JumpDate_go(self):
         self.FuTureDay+=1
         if self.FuTureDay>6:
-            messagebox.showwarning(title='错误',message='错误的星期！您的请求与人类文明现有历法冲突，请返回！')
+            messagebox.showwarning(title='亲',message='没有更多数据了呢~')
             self.FuTureDay-=1
         self.futureWeaFrame.pack_forget()
         self.Future()
@@ -423,7 +401,7 @@ class MianWindow(object):
     def JumpDate_back(self):
         self.FuTureDay-=1
         if self.FuTureDay<0:
-            messagebox.showwarning(title='错误',message='错误的星期！您的请求与人类文明现有历法冲突，请返回！')
+            messagebox.showwarning(title='亲',message='过去的就让它过去吧。。。')
             self.FuTureDay += 1
         self.futureWeaFrame.pack_forget()
         self.Future()

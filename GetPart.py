@@ -2,8 +2,6 @@ import requests
 import re
 import  json
 
-
-
 def  pick(code):
 
     url = 'http://v.juhe.cn/weather/index?format=2&cityname='+code+'&key=43ecc84eecddd574aa7fb3ccd7287079'
