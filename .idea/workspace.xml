@@ -15,7 +15,6 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$PreMain.coverage" NAME="PreMain Coverage Results" MODIFIED="1553929952306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/wprk_szy$S.coverage" NAME="S Coverage Results" MODIFIED="1554003485926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$S.coverage" NAME="S Coverage Results" MODIFIED="1553951104606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$A.coverage" NAME="A Coverage Results" MODIFIED="1553343199761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$CityListReady.coverage" NAME="CityListReady Coverage Results" MODIFIED="1553698006099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -26,8 +25,8 @@
       <file leaf-file-name="S.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/S.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="404" column="47" lean-forward="false" selection-start-line="404" selection-start-column="47" selection-end-line="404" selection-end-column="47" />
+            <state relative-caret-position="180">
+              <caret line="385" column="42" lean-forward="false" selection-start-line="385" selection-start-column="42" selection-end-line="385" selection-end-column="42" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
                 <element signature="e#1204#1677#0" expanded="false" />
@@ -42,8 +41,6 @@
                 <element signature="e#11730#12144#0" expanded="false" />
                 <element signature="e#12182#14202#0" expanded="false" />
                 <element signature="e#14234#14297#0" expanded="false" />
-                <element signature="e#16331#16555#0" expanded="false" />
-                <element signature="e#16594#16820#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -480,8 +477,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -540,8 +535,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -607,8 +600,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,8 +640,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -691,8 +680,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,8 +720,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -775,8 +760,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -817,8 +800,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,8 +832,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -885,8 +864,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -919,8 +896,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -953,8 +928,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -990,6 +963,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chck_part.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CityListReady.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1018,18 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chck_part.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/S.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="404" column="47" lean-forward="false" selection-start-line="404" selection-start-column="47" selection-end-line="404" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="385" column="42" lean-forward="false" selection-start-line="385" selection-start-column="42" selection-end-line="385" selection-end-column="42" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
             <element signature="e#1204#1677#0" expanded="false" />
@@ -1044,8 +1017,6 @@
             <element signature="e#11730#12144#0" expanded="false" />
             <element signature="e#12182#14202#0" expanded="false" />
             <element signature="e#14234#14297#0" expanded="false" />
-            <element signature="e#16331#16555#0" expanded="false" />
-            <element signature="e#16594#16820#0" expanded="false" />
           </folding>
         </state>
       </provider>

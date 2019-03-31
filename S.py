@@ -383,7 +383,7 @@ class MianWindow(object):
 
 
 
-        self.futureWeaFrame=Frame(self.Top,bg='pink')
+        self.futureWeaFrame=Frame(self.Top)
         # 定义跳转按钮
         self.butFrame=Frame(self.futureWeaFrame)
 
