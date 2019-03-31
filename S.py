@@ -307,14 +307,16 @@ class MianWindow(object):
         name=self.New_name.get()
         code_1=self.New_code_1.get()
         code_2 = self.New_code_2.get()
-        if code_1 is not code_2:
-            messagebox.showwarning(title='警告',message='密码不匹配，请重新输入！')
+        print('测试'+name+'  '+code_1+' '+code_2)
+        if code_1 == code_2:
+            re = Set_New.Do(name, code_1, code_2)
+            if re is 1:
+                messagebox.showinfo(title='通知', message='注册完成！')
+                self.Back_to_log()
+
 
         else:
-            re =Set_New.Do(name,code_1,code_2)
-            if re is 1:
-                messagebox.showinfo(title='通知',message='注册完成！')
-                self.Back_to_log()
+            messagebox.showwarning(title='警告', message='密码不匹配，请重新输入！')
 
     def Login(self):
         name=self.U_name.get()
