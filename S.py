@@ -385,7 +385,7 @@ class MianWindow(object):
 
         self.futureWeaFrame=Frame(self.Top,bg='pink')
         # 定义跳转按钮
-        self.butFrame=Frame(self.futureWeaFrame,bg='red')
+        self.butFrame=Frame(self.futureWeaFrame)
 
         self.BacKbut = Button(self.futureWeaFrame,bg='pink',font=("楷书", 21),text='返回',command=self.Back_2).pack(side='left')
 
